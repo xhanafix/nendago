@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cempedak Kampung - Tempahan WhatsApp</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom CSS for animations and fonts */
+        body {
+            /* Using a system font that's usually clean and modern for better UI */
+            font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        /* Fade-in animation for the main content card */
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Subtle bounce-on-hover effect for buttons */
+        .animate-bounce-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Custom scrollbar styling for a cleaner look (optional, but enhances UI) */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0fdf4; /* light green background */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a7f3d0; /* a more vibrant green */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6ee7b7; /* even more vibrant on hover */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-green-200 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Profile Card Container -->
+    <div class="bg-white rounded-3xl shadow-xl p-8 max-w-md w-full text-center space-y-6 md:space-y-8 animate-fade-in border border-yellow-300">
+
+        <!-- Profile Picture / Logo -->
+        <div class="mx-auto rounded-full w-36 h-36 overflow-hidden border-4 border-yellow-400 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <!-- Using an image that resembles cempedak/jackfruit -->
+            <img src="https://raw.githubusercontent.com/xhanafix/nendago/main/Gemini_Generated_Image_u55k5qu55k5qu55k.png" alt="Fresh Cempedak" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Name / Title -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-green-800 tracking-tight leading-tight">Cempedak Kampung</h1>
+        <p class="text-lg md:text-xl text-gray-700 font-medium italic">Sumber Cempedak Kampung Segar & Lazat Anda!</p>
+
+        <!-- Product Image -->
+        <div class="mx-auto max-w-xs sm:max-w-sm overflow-hidden rounded-2xl border-4 border-green-300 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="https://github.com/xhanafix/nendago/blob/main/photo_2025-08-12_13-40-04.jpg?raw=true" alt="Cempedak Product Photo" class="w-full h-auto object-cover">
+        </div>
+
+        <!-- Product Details & Pricing Section -->
+        <div class="bg-yellow-50 p-6 rounded-2xl shadow-inner border border-yellow-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-4">Tawaran Istimewa Kami</h2>
+            <ul class="text-left space-y-3 text-gray-800 text-lg">
+                <li class="flex items-center">
+                    <i class="fas fa-weight-hanging text-green-600 mr-3 text-xl"></i>
+                    <span class="font-semibold">Berat:</span> 500gm setiap pek
+                </li>
+                <!-- Pricing for 1 Pack -->
+                <li class="flex items-center justify-between bg-yellow-100 p-3 rounded-xl border border-yellow-300 shadow-sm transition-all duration-200 hover:scale-[1.02]">
+                    <span class="flex items-center">
+                        <i class="fas fa-box-open text-orange-500 mr-3 text-xl"></i>
+                        <span class="font-semibold">1 Pek</span>
+                    </span>
+                    <span class="text-orange-700 font-extrabold text-2xl">RM10</span>
+                </li>
+                <!-- Pricing for 3 Packs (Highlighted as best deal) -->
+                <li class="flex items-center justify-between bg-yellow-200 p-3 rounded-xl border border-yellow-400 shadow-md transition-all duration-200 hover:scale-[1.02]">
+                    <span class="flex items-center">
+                        <i class="fas fa-boxes text-orange-600 mr-3 text-xl"></i>
+                        <span class="font-semibold">3 Pek</span>
+                    </span>
+                    <span class="text-orange-800 font-extrabold text-3xl">RM25</span>
+                    <span class="text-green-600 text-sm font-bold ml-2 hidden sm:inline-block">(Jimat RM5!)</span>
+                    <span class="text-green-600 text-xs font-bold ml-2 sm:hidden">(Jimat RM5!)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- WhatsApp Order Buttons -->
+        <div class="space-y-4 pt-4">
+            <!-- Button for 1 Pack Order -->
+            <a href="https://wa.me/60134647964?text=Assalamualaikum,%20saya%20nak%20tempah%201%20pek%20cempedak%20kampung%20RM10.%0AMinta%20info%20lanjut%20ya."
+               target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl animate-bounce-hover">
+                <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                Tempah 1 Pek - RM10
+            </a>
+
+            <!-- Button for 3 Packs Order (Prominent) -->
+            <a href="https://wa.me/60134647964?text=Assalamualaikum,%20saya%20nak%20tempah%203%20pek%20cempedak%20kampung%20RM25.%0AMinta%20info%20lanjut%20ya."
+               target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl animate-bounce-hover">
+                <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                Tempah 3 Pek - RM25 <span class="hidden sm:inline-block ml-2">(Nilai Terbaik!)</span>
+                <span class="sm:hidden ml-2 text-sm">(Jimat!)</span>
+            </a>
+        </div>
+
+        <!-- Call to Action / Footer Message -->
+        <p class="text-md text-gray-600 pt-6">
+            <span class="font-semibold text-green-700">Dijamin Segar & Berkualiti!</span> Klik di atas untuk WhatsApp kami sekarang.
+        </p>
+
+        <!-- Delivery Note -->
+        <p class="text-md font-bold text-green-600 pt-2 pb-2 border-t border-b border-green-200 rounded-md bg-green-50">
+            <i class="fas fa-truck-fast mr-2 text-lg"></i> Order Sekarang - Hantar Sekarang! <br class="sm:hidden"> <span class="text-sm font-normal">(Sekitar Lembah Klang & K.L Sahaja)</span>
+            <br><br>
+            <i class="fas fa-store mr-2 text-lg"></i> <span class="text-orange-600">Self Pickup:</span> Damansara Damai, Petaling Jaya, Selangor
+        </p>
+
+        <p class="text-xs text-gray-400 mt-4">&copy; 2025 copyright Nendago</p>
+    </div>
+
+</body>
+</html>
