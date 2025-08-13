@@ -62,9 +62,20 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-green-800 tracking-tight leading-tight">Cempedak Kampung</h1>
         <p class="text-lg md:text-xl text-gray-700 font-medium italic">Sumber Cempedak Kampung Segar & Lazat Anda!</p>
 
-        <!-- Product Image -->
-        <div class="mx-auto max-w-xs sm:max-w-sm overflow-hidden rounded-2xl border-4 border-green-300 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-            <img src="https://github.com/xhanafix/nendago/blob/main/photo_2025-08-12_13-40-04.jpg?raw=true" alt="Cempedak Product Photo" class="w-full h-auto object-cover">
+        <!-- Product Images Grid (Masonry-like) -->
+        <div class="mx-auto max-w-full grid grid-cols-2 gap-4">
+            <div class="rounded-2xl border-4 border-green-300 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl aspect-square overflow-hidden">
+                <img src="https://github.com/xhanafix/nendago/blob/main/photo_2025-08-12_13-40-04.jpg?raw=true" alt="Cempedak Product Photo 1" class="w-full h-full object-cover rounded-xl product-image-thumbnail cursor-pointer">
+            </div>
+            <div class="rounded-2xl border-4 border-green-300 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl aspect-square overflow-hidden">
+                <img src="https://github.com/xhanafix/nendago/blob/main/0.png?raw=true" alt="Cempedak Product Photo 2" class="w-full h-full object-cover rounded-xl product-image-thumbnail cursor-pointer">
+            </div>
+            <div class="rounded-2xl border-4 border-green-300 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl aspect-square overflow-hidden">
+                <img src="https://github.com/xhanafix/nendago/blob/main/1.png?raw=true" alt="Cempedak Product Photo 3" class="w-full h-full object-cover rounded-xl product-image-thumbnail cursor-pointer">
+            </div>
+            <div class="rounded-2xl border-4 border-green-300 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl aspect-square overflow-hidden">
+                <img src="https://github.com/xhanafix/nendago/blob/main/2.png?raw=true" alt="Cempedak Product Photo 4" class="w-full h-full object-cover rounded-xl product-image-thumbnail cursor-pointer">
+            </div>
         </div>
 
         <!-- Product Details & Pricing Section -->
@@ -81,7 +92,7 @@
                         <i class="fas fa-box-open text-orange-500 mr-3 text-xl"></i>
                         <span class="font-semibold">1 Pek</span>
                     </span>
-                    <span class="text-orange-700 font-extrabold text-2xl">RM10</span>
+                    <span class="text-orange-700 font-extrabold text-xl md:text-2xl">RM10</span>
                 </li>
                 <!-- Pricing for 3 Packs (Highlighted as best deal) -->
                 <li class="flex items-center justify-between bg-yellow-200 p-3 rounded-xl border border-yellow-400 shadow-md transition-all duration-200 hover:scale-[1.02]">
@@ -89,7 +100,7 @@
                         <i class="fas fa-boxes text-orange-600 mr-3 text-xl"></i>
                         <span class="font-semibold">3 Pek</span>
                     </span>
-                    <span class="text-orange-800 font-extrabold text-3xl">RM25</span>
+                    <span class="text-orange-800 font-extrabold text-2xl md:text-3xl">RM25</span>
                     <span class="text-green-600 text-sm font-bold ml-2 hidden sm:inline-block">(Jimat RM5!)</span>
                     <span class="text-green-600 text-xs font-bold ml-2 sm:hidden">(Jimat RM5!)</span>
                 </li>
@@ -101,7 +112,7 @@
             <!-- Button for 1 Pack Order -->
             <a href="https://wa.me/60134647964?text=Assalamualaikum,%20saya%20nak%20tempah%201%20pek%20cempedak%20kampung%20RM10.%0AMinta%20info%20lanjut%20ya."
                target="_blank" rel="noopener noreferrer"
-               class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl animate-bounce-hover">
+               class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl animate-bounce-hover">
                 <i class="fab fa-whatsapp text-2xl mr-3"></i>
                 Tempah 1 Pek - RM10
             </a>
@@ -109,7 +120,7 @@
             <!-- Button for 3 Packs Order (Prominent) -->
             <a href="https://wa.me/60134647964?text=Assalamualaikum,%20saya%20nak%20tempah%203%20pek%20cempedak%20kampung%20RM25.%0AMinta%20info%20lanjut%20ya."
                target="_blank" rel="noopener noreferrer"
-               class="flex items-center justify-center bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl animate-bounce-hover">
+               class="flex items-center justify-center bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl animate-bounce-hover">
                 <i class="fab fa-whatsapp text-2xl mr-3"></i>
                 Tempah 3 Pek - RM25 <span class="hidden sm:inline-block ml-2">(Nilai Terbaik!)</span>
                 <span class="sm:hidden ml-2 text-sm">(Jimat!)</span>
@@ -131,5 +142,52 @@
         <p class="text-xs text-gray-400 mt-4">&copy; 2025 copyright Nendago</p>
     </div>
 
+    <!-- Lightbox Markup -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 hidden opacity-0 transition-opacity duration-300">
+        <div class="relative max-w-full max-h-full bg-white rounded-lg shadow-xl overflow-hidden p-2">
+            <button id="lightbox-close" class="absolute top-2 right-2 text-white bg-red-600 hover:bg-red-700 rounded-full w-8 h-8 flex items-center justify-center text-xl font-bold cursor-pointer z-10 transition-colors duration-200">
+                &times;
+            </button>
+            <img id="lightbox-image" src="" alt="Full size product image" class="max-w-full max-h-[90vh] object-contain rounded-lg">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lightbox script
+            const productThumbnails = document.querySelectorAll('.product-image-thumbnail');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxClose = document.getElementById('lightbox-close');
+
+            productThumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    lightboxImage.src = thumbnail.src;
+                    lightbox.classList.remove('hidden');
+                    // Force reflow to ensure transition plays
+                    void lightbox.offsetWidth;
+                    lightbox.classList.add('opacity-100');
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('opacity-100');
+                lightbox.classList.add('opacity-0');
+                lightbox.addEventListener('transitionend', () => {
+                    if (lightbox.classList.contains('opacity-0')) {
+                        lightbox.classList.add('hidden');
+                    }
+                }, { once: true });
+            }
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                // Close if clicking on the overlay itself, not the image or close button
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
